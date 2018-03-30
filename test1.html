@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            width: 300px;
+            height: 200px;
+            background: orange;
+            /* transition: background-color 2s linear; */
+            transition-property: width background-color border-radius;
+            transition-duration: 2s;
+            border-radius: 20px;
+        }
+        
+        ul:hover {
+            /* transition-delay: 2s; */
+            /* transform: translate(600px, 400px); */
+            /* transition-duration: 2s;
+            transform: scale(1.5, 2.2);
+            transform: rotate(90deg);
+            transform: skew(45deg, 15deg);
+            transform-origin: right top; */
+            background-color: black;
+            width: 600px;
+            border-radius: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>

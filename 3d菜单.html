@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        nav {
+            width: 600px;
+            height: 200px;
+            border: 1px solid red;
+            padding: 50px;
+        }
+        
+        nav li {
+            width: 50px;
+            height: 40px;
+            margin: 20px;
+            /* background-color: yellow; */
+            /* perspective: 200px; */
+            transform-style: preserve-3d;
+            float: left;
+            margin: 40px;
+            list-style: none;
+            position: relative;
+        }
+        
+        nav li a {
+            float: left;
+            width: 50px;
+            height: 40px;
+            background-color: pink;
+            line-height: 40px;
+            text-align: center;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            transform-origin: top;
+            transition: all 3s;
+        }
+        
+        nav li span {
+            float: left;
+            transform: rotateX(90deg);
+            width: 50px;
+            height: 40px;
+            background-color: blue;
+            line-height: 40px;
+            text-align: center;
+            position: absolute;
+            transform-origin: top;
+            top: 40px;
+            left: 0;
+            transition: all 3s;
+        }
+        
+        nav li:hover span {
+            transform: rotateX(0deg);
+        }
+        
+        nav li:hover a {
+            transform: rotateX(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <li><a href="">射手</a><span>孙尚香</span></li>
+        <li><a href="">法师</a><span>妲己</span></li>
+        <li><a href="">刺客</a><span>李白</span></li>
+        <li><a href="">战士</a><span>赵云</span></li>
+        <li><a href="">辅助</a><span>蔡文姬</span></li>
+    </nav>
+</body>
+
+</html>
