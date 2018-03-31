@@ -3,7 +3,7 @@
 
 <head>
     <title>CSS3 @keyframes</title>
-    <style type="text/css">
+    <!-- <style type="text/css">
         @-webkit-keyframes mycolor {
             0% {
                 background-color: red;
@@ -59,12 +59,32 @@
             animation-timing-function: linear;
             animation-iteration-count: 2;
         }
-    </style>
+    </style> -->
+    <link rel="stylesheet" href="../animate.css/animate.css">
 
+    <style>
+        #div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: red;
+        }
+        
+        #div:hover {
+            animation-name: rubberBand;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+        }
+    </style>
 </head>
 
 <body>
-    <div></div>
+    <div id="div"></div>
+    <script>
+        var div = document.getElementById('div');
+        div.setAttribute('class', 'flash');
+    </script>
 </body>
 
 </html>
